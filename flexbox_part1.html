@@ -7,23 +7,37 @@
     <title>Document</title>
     <style>
         body {
+            height: 100vh;
             margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
         }
         div {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 300px;
             height: 300px;
-            background-color: teal;
-            margin-right: 10px;
+            background-color: teal; 
+            font-size: 30px;
+            color:white;
+        }
+        .second {
+            background-color: bisque;
         }
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
+    <div>1</div>
+    <div class="second">2</div>
+    <div>3</div>
+    <div>4</div>
 </body>
 </html>
+
+<!-- flexbox는 자식 elements에서는 선언하지 않고 부모에게만 선언해야함!!-->
+<!-- 바로 위 부모에게 flex가 선언되었을때 자식들이 반응함, 부모의 부모가 선언되면 소용없음-->
+<!-- wrap은 width사이즈를 보장해줌-->
